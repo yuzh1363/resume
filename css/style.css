@@ -1,0 +1,250 @@
+/* 全域樣式 */
+:root {
+    --primary-color: #40cef2;
+    --secondary-color: #1eaacd;
+    --dark-color: #0f172a;
+    --light-color: #f8fafc;
+    --white: #ffffff;
+    --transition: all 0.3s ease;
+    --section-padding: 6rem 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--dark-color);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: var(--section-padding);
+}
+button{
+    border-radius: 12px;
+    padding: 8px 16px;
+    border: none;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    transform: translateY(-5px);
+}
+button>a{
+    color: #0f172a;
+}
+.btn-b{
+    background-color: var(--primary-color);
+}
+
+.btn-y{
+    background-color: #eccc73;
+}
+/* Header */
+header {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px #b1d9e0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+.navbar-nav{
+    display: flex;
+    align-items: center;
+    height: 30vh;
+}
+
+ .nav-item {
+    width: 50%;
+    border-radius: 36px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.nav-item:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--light-color);
+    transform: translateY(-3px);
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--light-color);
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+    
+}
+
+/* ABOUT */
+#About{
+    background-color: #cfe2e7;
+}
+
+.photo>img {
+    width: 40%;
+    border-radius: 36px;
+    box-shadow: 4px 4px var(--secondary-color);
+}
+.contact-item>a{
+    color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
+}
+.contact-item>a:hover{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 4px 8px;
+    transform: translate(-2px);
+}
+.contact-item>i{
+    margin-right: 8px;
+    font-size: 1.5rem;
+}
+/* Skill */
+
+.title-content{
+    background-color: var(--secondary-color);
+    color: #f8fafc;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* 作品集 */
+#Project{
+    background-color: var(--light-color);
+}
+.p-item{
+    /* border: 2px solid salmon; */
+    padding: 24px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+    background-color: var(--light-color);
+    box-shadow: 1px 1px 12px #c7c7c7;
+    min-width: 300px;
+}
+
+.p-img{
+    text-align: center;
+    margin-bottom: 12px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 1px 1px 8px #c0c0c0;
+}
+.p-img>img{
+    width: 100%;
+    
+}
+.p-title{
+    font-weight: bold;
+    text-align: center;
+}
+.link-group{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top:10px ;
+}
+/* Experience */
+
+.cards{
+    background-color: var(--white);
+    border-left: 4px solid var(--primary-color);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.cards span{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 1rem;
+}
+.cards .comp{
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-bottom: 1.3rem;
+}
+.cards h3{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+footer i{
+    font-size: 24px;
+}
+footer i:hover{
+    color: #40cef2;
+}
+
+@media (min-width: 768px) {
+    :root {
+    --section-padding: 5rem 0;
+}
+header{
+    height: 80px;
+}
+.navbar-nav{
+    height: 10vh;
+}
+.nav-item {
+    width: 90px;
+    border-radius: 12px;
+    background-color: var(--white);
+    margin-top: 0px;
+}
+
+.nav-link{
+    color: var(--secondary-color);
+}
+.nav-link:hover{
+    color: var(--primary-color);
+    
+}
+.personal-intro{
+    display: flex;
+    flex-direction: row;
+}
+.photo{
+    width: 80%;
+}
+.photo>img{
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+#About h2,#Skill h2,#Project h2,#Exp h2{
+    font-size: 2rem;
+}
+.cards-group{
+    gap: px;
+}
+@media (min-width: 992px){
+   
+.photo{
+    width: 40%;
+}
+.photo>img{
+    max-width: 280px;
+    aspect-ratio: 1;
+    object-fit:cover;
+}
+}
+
+}
